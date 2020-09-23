@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace personnes
+namespace PersonneNS
 {
     class Program
     {

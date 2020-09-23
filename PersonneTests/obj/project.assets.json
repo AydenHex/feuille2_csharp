@@ -902,14 +902,14 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "personnes/1.0.0": {
+      "Personne/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/personnes.dll": {}
+          "bin/placeholder/Personne.dll": {}
         },
         "runtime": {
-          "bin/placeholder/personnes.dll": {}
+          "bin/placeholder/Personne.dll": {}
         }
       }
     }
@@ -3505,17 +3505,17 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "personnes/1.0.0": {
+    "Personne/1.0.0": {
       "type": "project",
-      "path": "../personnes/personnes.csproj",
-      "msbuildProject": "../personnes/personnes.csproj"
+      "path": "../Personne/Personne.csproj",
+      "msbuildProject": "../Personne/Personne.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "Personne >= 1.0.0",
       "coverlet.collector >= 1.2.0",
-      "personnes >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
@@ -3544,8 +3544,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/quentinroyer/projects/c#/videos_exercises/personnes/personnes.csproj": {
-              "projectPath": "/home/quentinroyer/projects/c#/videos_exercises/personnes/personnes.csproj"
+            "/home/quentinroyer/projects/c#/videos_exercises/Personne/Personne.csproj": {
+              "projectPath": "/home/quentinroyer/projects/c#/videos_exercises/Personne/Personne.csproj"
             }
           }
         }

@@ -1,9 +1,9 @@
 
 using System;
 using Xunit;
-using personnes;
+using PersonneNS;
 
-namespace PersonneTests
+namespace PersonneTestsNS
 {
     public class PersonneTestsClass
     {

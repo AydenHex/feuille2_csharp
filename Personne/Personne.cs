@@ -1,12 +1,12 @@
 using System;
 
-namespace personnes
+namespace PersonneNS
 {
     public class Personne : IDisposable
     {
-        private string nom;
-        private string prenom;
-        private int age;
+        protected string nom;
+        protected string prenom;
+        protected int age;
 
         private static int nbPersonne;
 
@@ -23,15 +23,21 @@ namespace personnes
         }
 
         public override string ToString() {
-            return string.Format("Nom : {0}, Prenom : {1}, Age : {2}", this.nom, this.prenom, this.age);
+            return $"Nom:{this.nom}, Prenom:{this.prenom}, age:{this.age}";
         }
 
-        public void Afficher() {
+        public virtual void Afficher() {
             Console.WriteLine(this);
         }
 
         public static int Combien() {
             return nbPersonne;
+        }
+
+        public static Personne operator ++(Personne p)
+        {
+            p.age += 1; 
+            return p;
         }
     }
 }
