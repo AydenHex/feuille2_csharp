@@ -3,7 +3,7 @@ using System.Collections;
 using PersonneNS;
 using Societe.models;
 
-namespace SocieteListe
+namespace SocieteEnum
 {
     public class Liste : IEnumerable
     {
@@ -80,6 +80,17 @@ namespace SocieteListe
 
         public void Vider() {
             this.debut = null;
+        }
+
+        // Implementation for the GetEnumerator method.
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+        return (IEnumerator) GetEnumerator();
+        }
+
+        public ListeEnumeration GetEnumerator()
+        {
+            return new ListeEnumeration(this);
         }
     }
 }

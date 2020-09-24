@@ -1,6 +1,6 @@
 using System;
 
-namespace SocieteListe
+namespace SocieteEnum
 {
    public class Element
    {
