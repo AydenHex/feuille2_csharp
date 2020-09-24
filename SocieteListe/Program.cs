@@ -24,7 +24,7 @@ namespace SocieteListe
             maListe.InsererDebut(emp4);
             maListe.InsererDebut(chf1);
             maListe.InsererDebut(chf2);
-            maListe.InsererDebut(dir1); */
+            maListe.InsererDebut(dir1);
 
 
             maListe.InsererDebut(emp1);
@@ -33,11 +33,14 @@ namespace SocieteListe
             maListe.InsererDebut(emp4);
             maListe.InsererDebut(chf1);
             maListe.InsererDebut(chf2);
-            maListe.InsererDebut(dir1);
+            maListe.InsererDebut(dir1);*/
+
+            maListe.InsererFinR(emp1);
+            maListe.InsererFinR(emp2);
 
             maListe.Lister();
-            Console.WriteLine(maListe[0]);
-            Console.WriteLine(maListe[6]);
+            //Console.WriteLine(maListe[0]);
+            //Console.WriteLine(maListe[6]);
         }
     }
 }

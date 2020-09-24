@@ -5,7 +5,7 @@ using Societe.models;
 
 namespace SocieteListe
 {
-    public class Liste : IEnumerable
+    public class Liste
     {
         private Element debut;
         private int nbElement;
@@ -51,6 +51,21 @@ namespace SocieteListe
             // SUivant == null
             actual.Suivant = element;
             this.nbElement++;
+        }
+
+        public void InsererFinR(Object objet, Element current = null) {
+            if (this.debut == null) {
+                this.debut = new Element(objet);
+            }
+            if (current == null) {
+                current = this.debut;
+            }
+            if (current.Suivant != null) {
+                InsererFinR(objet, current.Suivant);
+            }
+            current.Suivant = new Element(objet);
+            this.nbElement++;
+
         }
 
         public void InsererDebut(Object objet) {
