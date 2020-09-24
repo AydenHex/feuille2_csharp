@@ -218,7 +218,7 @@ project.lock.json
 # SpecFlow specific
 *.feature.cs
 *.feature.xlsx.*
-*.Specs_*.html
+*.Specs_*.htm
 
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
